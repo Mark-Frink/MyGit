@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      font-family: myConsolas;
-    }
-    div{
-      font-size: 10px;
-      line-height: 0.5;
-      zoom: .5;
-      transform: translate(-50%,0);
-      position: absolute;
-      top: 20px;
-      left: 50%;
-    }
-    @font-face {
-      font-family: "myConsolas";
-      src: url("./font/Consola\ Mono.ttf");
-      src: url('./font/Consola\ Mono.woff') format('woff'), /* Modern Browsers */
-          url('./font/Consola\ Mono.ttf')  format('truetype'), /* Safari, Android, iOS */
-    }
-  </style>
-  <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: myConsolas;
+        font-size: 16px;
+      }
+      .div{
+        display: none;
+        transform: translate(-50%, 0);
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        text-align: center;
+      }
+      .tip{
+        height: 30px;
+        line-height: 30px;
+        background-color: #00000080;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 20px;
+        max-width: 410px;
+      }
+      .zifu {
+        line-height: 0.5;
+      }
+      .actives{
+        display: block;
+      }
+      .smalls{
+        zoom: .2;
+      }
+      @font-face {
+        font-family: 'myConsolas';
+        src: url('./font/Consola\ Mono.ttf');
+        src: url('./font/Consola\ Mono.woff') format('woff'),
+          /* Modern Browsers */ url('./font/Consola\ Mono.ttf')
+            format('truetype'); /* Safari, Android, iOS */
+      }
+    </style>
+    <div class="div actives">
+      <div class="zifu">x</div>
+      <div class="tip">这是一个字符，远远看去，它像一个点</div>
+    </div>
+    <div class="div">
+      <div class="zifu">
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      </div>
+      <div class="tip">这是一个字符串，远远看去，它像一条线</div>
+    </div>
+    <div class="div">
+      <div class="zifu">
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    </div>
+    <div class="tip">这是一个字符串点阵，远远看去，它像一个面</div>
+    </div>
+    <div class="div">
+      <div class="zifu">
     ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"""""""""""""""""""""""""""""""""""""""""""""">>>>>
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"""""""""""""""""""""""""""""""""""""""""""""">>>>>
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"""""""""""""""""""""""""""""""""""""""""""">>>>>>>
@@ -585,6 +638,60 @@
 >>>>>>>>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiilKW%%%%%%%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN@@@N%%%%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN@@@NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%%&l1/////////////////////////////////////////////////////////
 iiiii>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii+*#W%%%%%%%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%%%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN@@N%%%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN@@@NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%%K*1/////////////////////////////////////////////////////////
 iiiii>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii++IE%%%%%%%%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%%%%%%%%%%%%%%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%NNNNNNNNNNNNNNNNNN@@N%%%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN@@@NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%%K*1/////////////////////////////////////////////////////////
-  </div>
-</body>
+    </div>
+    </div>
+    <script>
+      (()=>{
+        let nodes = document.querySelectorAll(".div");
+        let i = 0,j=0;
+        let str_="",str=""
+       console.log(nodes);
+        let timers = setInterval(() => {
+          if(i<nodes.length){
+            for (const item of nodes) {
+              item.classList.remove('actives');
+            }
+            nodes[i].classList.add("actives")
+            i++
+            switch (i) {
+              case 0:
+                content = document.querySelector('.actives>.tip')
+                str="这是一个字符，远远看去，它像一个点"
+                content.innerHTML=""
+                break;
+              case 1:
+                 content = document.querySelector('.actives>.tip')
+                str="这是一个字符串，远远看去，它像一条线"
+                content.innerHTML=""
+                break;
+              case 2:
+                 content = document.querySelector('.actives>.tip')
+                str="这是一个字符串点阵，远远看去，它像一个面"
+                content.innerHTML=""
+                break;
+              case 3:
+                content = document.querySelector('.actives>.tip')
+                str="这是一个字符，远远看去，它像一个点"
+                content.innerHTML=""
+                break;
+                default:
+                  null
+                  break;
+                }
+                let timer = setInterval(()=>{
+                if(str_.length<str.length-1){
+                    str_ += str[i++]
+                    content.innerHTML = '<p>'+str_+'_</p>' //打印时加光标
+                }else{
+                    clearInterval(timer)
+                    content.innerHTML = '<p>'+str_+'</p>'
+                }
+            },100)
+          }else{
+            i=0
+          }
+        }, 5000);
+      })()
+    </script>
+  </body>
 </html>
